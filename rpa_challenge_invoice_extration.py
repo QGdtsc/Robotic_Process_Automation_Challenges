@@ -226,7 +226,7 @@ df_resultat.to_csv(PATH_TO_RPA_CHALLENGE_INVOICE_EXTRACTION_FOLDER + 'resultat.c
 invoice_extraction_challenge.find_element_by_xpath('//*[@id="submit"]/div/div/div/form/input[1]').send_keys(PATH_TO_RPA_CHALLENGE_INVOICE_EXTRACTION_FOLDER + 'resultat.csv')
 
 
-# Attendre 1 secondes
+# Attendre 1 seconde
 time.sleep(1)
 
 
