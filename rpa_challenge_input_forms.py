@@ -26,7 +26,7 @@ def verification_file_already_in_folder():
 def wait_for_downloads():
     print("Waiting for downloads")
     while any([filename.endswith(".crdownload") for filename in 
-               os.listdir(PATH_TO_DOWNLOAD_FOLDER)]): # variable PATH_TO_DOWNLOAD_FOLDER : chemin du dossier Téléchargements
+               os.listdir(PATH_TO_DOWNLOAD_FOLDER)]): # variable PATH_TO_DOWNLOAD_FOLDER : Chemin du dossier Téléchargements
         time.sleep(2)
         print(".")
     print("DONE")
@@ -34,7 +34,7 @@ def wait_for_downloads():
 
 def change_file_directory():
     print('Change directory of the downloaded file')
-    source = PATH_TO_DOWNLOAD_FOLDER + "challenge.xlsx" # variable PATH_TO_DOWNLOAD_FOLDER : chemin du dossier Téléchargements
+    source = PATH_TO_DOWNLOAD_FOLDER + "challenge.xlsx" # variable PATH_TO_DOWNLOAD_FOLDER : Chemin du dossier Téléchargements
     destination = PATH_TO_EXCEL_WORKBOOK_FOLDER + "challenge.xlsx" # variable "PATH_TO_EXCEL_WORKBOOK_FOLDER" : Chemin du dossier dans lequel le fichier Excel du challenge doit être déplacé
     try:
         if os.path.exists(destination):
